@@ -32,12 +32,3 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-- task: WindowsMachineFileCopy@2
-  inputs:
-    SourcePath: '$(Build.Repository.LocalPath)'
-    MachineNames: '185.71.103.164'
-    adminUserName: 'KYNETIX\PeteaB'
-    adminPassword: '20190605Welcome'
-    TargetPath: 'C:\bogdi'
-    CopyFilesInParallel: false
